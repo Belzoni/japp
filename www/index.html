@@ -27,16 +27,17 @@
     <body>
         
 		
-<p>First Paragraph</p>
-<p>Second Paragraph</p>
-<p>Yet one more Paragraph</p>
+		<div id="text"></div>
+		
+		<button class="ui-btn" id="Silly">Button</button>
+		
 		
 
 		<script>
-$( "p" ).click(function() {
-  $( this ).slideUp();
-});
-</script>
+			$( "button" ).click(function() {
+			  $("#text").append("<p>This is text in a div</p>");
+			});
+        </script>
 
 			  
 		
