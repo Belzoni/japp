@@ -5,12 +5,11 @@
         <meta name="format-detection" content="telephone=no" />
         <!-- WARNING: for iOS 7, remove the width=device-width and height=device-height attributes. See https://issues.apache.org/jira/browse/CB-4323 -->
         <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width, height=device-height, target-densitydpi=device-dpi" />
-        <link rel="stylesheet" type="text/css" href="css/index.css" />
-		<link rel="stylesheet" href="//ajax.googleapis.com/ajax/libs/jquerymobile/1.4.2/jquery.mobile.min.css" />
-        <link rel="stylesheet" href="//ajax.googleapis.com/ajax/libs/jqueryui/1.10.4/themes/smoothness/jquery-ui.css" />
-        <script src="https://code.jquery.com/jquery-1.11.0.min.js"></script>
-		<link href="//netdna.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap.min.css" rel="stylesheet">
-		<script src="//netdna.bootstrapcdn.com/bootstrap/3.1.1/js/bootstrap.min.js"></script>
+       
+    <link rel="stylesheet" href="http://code.jquery.com/mobile/1.0rc2/jquery.mobile-1.0rc2.min.css">  
+    <script type="text/javascript" src="http://code.jquery.com/jquery-1.6.4.min.js"></script>  
+    <script type="text/javascript" src="http://code.jquery.com/mobile/1.0rc2/jquery.mobile-1.0rc2.min.js"></script> 
+		
         <title>Hello World</title>
 		
 		<script type="text/javascript">
@@ -24,23 +23,33 @@
 		
 		
     </head>
-    <body>
-        
-		
-		<div id="text"></div>
-		
-		<button class="ui-btn" id="Silly">Button</button>
-		
-		
-
-		<script>
-			$( "button" ).click(function() {
-			  $("#text").append("<p>This is text in a div</p>");
-			});
-        </script>
-
-			  
-		
-		
-    </body>
+ <body>  
+<div data-role="page" id="index">  
+    <header data-role="header">  
+        <h1>Top title bar</h1>  
+    </header>  
+      
+    <div data-role="content">  
+        <h3>Show another page??</h3>  
+        <p>hint: click the button below!</p>  
+        <p><a href="#about" data-role="button" data-theme="c">About us</a></p>  
+    </div>  
+      
+    <footer data-role="footer">  
+        <h2>&copy; footer here.</h2>  
+    </footer>  
+</div>  
+  
+<div data-role="page" id="about">  
+    <header data-role="header">  
+        <h1>Page 2 Here</h1>  
+    </header>  
+      
+    <div data-role="content">  
+        <p>just some extra content as well.</p>  
+        <p>I mean, you can <a data-rel="back" href="#index">go back</a> at any time.</p>  
+    </div>  
+</div>  
+</body>  
+</html>
 </html>
